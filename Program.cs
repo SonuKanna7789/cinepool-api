@@ -30,11 +30,12 @@ builder.Services.AddCors(options =>
     options.AddPolicy("LovableApp", policy =>
     {
         policy
-            .WithOrigins(
-                "https://cinepool-palace.lovable.app",
-                "http://localhost:5173",
-                "http://localhost:3000"
-            )
+            //.WithOrigins(
+            //    "https://cinepool-palace.lovable.app",
+            //    "http://localhost:5173",
+            //    "http://localhost:3000"
+            //)
+            .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials();
