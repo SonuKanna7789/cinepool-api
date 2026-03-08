@@ -35,6 +35,14 @@ builder.Services.AddCors(options =>
             //    "http://localhost:5173",
             //    "http://localhost:3000"
             //)
+            .WithOrigins(
+    "https://cinepool-palace.lovable.app",
+    "https://68123838-66c6-4e6a-82aa-7801aa444a83.lovableproject.com",
+    "https://id-preview--68123838-66c6-4e6a-82aa-7801aa444a83.lovable.app",
+    "http://localhost:5173",
+    "http://localhost:3000"
+)
+
             .AllowAnyOrigin()
             .AllowAnyHeader()
             .AllowAnyMethod()
