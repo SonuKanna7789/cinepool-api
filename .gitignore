@@ -1,0 +1,33 @@
+## .NET
+bin/
+obj/
+*.user
+.vs/
+*.suo
+.idea/
+
+## User-specific files
+*.rsuser
+*.userosscache
+*.sln.docstates
+
+## Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+
+## NuGet
+*.nupkg
+.nuget/
+
+## Secrets — never commit these
+appsettings.Production.json
+**/secrets.json
+
+## Logs
+*.log
+logs/
+
+## Docker
+.dockerignore
